@@ -1,0 +1,50 @@
+body{
+	font-family: tahoma;
+}
+
+div{
+	float: left;
+	margin: 25px;
+}
+h1{
+	text-align: center;
+	background: rgba(0, 0, 0, .5);
+}
+
+ #content1{
+	width: 300px;
+	height: 300px;
+	border: 10px solid red;
+	overflow: visible;
+}
+#content2{
+	width: 300px;
+	height: 300px;
+	border: 10px solid orange;
+	overflow: hidden;
+}
+#content3{
+	width: 300px;
+	height: 300px;
+	border: 10px solid yellow;
+	overflow: scroll;
+}
+#content4{
+	width: 300px;
+	height: 300px;
+	border: 10px solid blue;
+	overflow: auto;
+}
+
+#image{
+	width: 500px;
+	height: 300px;
+	border: 10px solid purple;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin-top: 200px;
+}
+#image img{
+	opacity: 0.8;
+	width: 600px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Dropdown 7</title>
+	<style>
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url(img3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	height: 100vh;
+	font-family: arial;
+
+}
+
+#nav{
+	width: 100%;
+	height: 50px;
+	background-color:rgb(0,128, 0);
+	
+}
+#nav ul{
+	padding: 0;
+}
+#nav ul li{
+	float: left;
+	list-style: none;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	background-color: rgba(0, 128, 0, 0.6);
+	color: white;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+#nav ul li:hover{
+	background-color:rgba(0, 255, 0, 1.0);
+	color: white;
+	transition: 1s all;
+}
+#nav ul li ul{
+	display: none;
+}
+#nav ul li:hover > ul{
+	display: block;
+
+}
+
+
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<ul>
+			<li><a href="#"> HOME </a></li>
+			<li><a href="#"> BLOG </a></li>
+			<li><a href="#"> SERVICES </a>
+				<ul>
+					<li>Graphics Design</li>
+					<li>Websites Design</li>
+					<li>Python Programmer</li>
+					<li>PHP Programmer</li>
+				</ul>
+			</li>
+			<li><a href="#"> TUTORIALS </a>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Design</li>
+					<li>JavaScript</li>
+				</ul>
+			</li>
+			<li><a href="#"> ABOUT </a>
+				<ul>
+					<li>About Me</li>
+					<li>Privacy Policy</li>
+				</ul>
+			</li>
+			<li><a href="#"> CONTACT </a>
+				<ul>
+					<li>E-Mail</li>
+					<li>Contact Me</li>
+					<li>Phones</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

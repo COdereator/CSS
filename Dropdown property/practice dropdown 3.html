@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Dropdown</title>
+	<style>
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav ul li{
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	width: 200px;
+	border: solid 2px;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+	list-style: none;
+	text-align: center;
+}
+#nav ul li ul{
+	display: none;
+}
+#nav ul li:hover > ul{
+	display: block;
+}
+#nav ul li ul li{
+	position: relative;
+}
+#nav ul li ul li ul{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+}
+#nav ul li:hover{
+	background: red;
+	color: white;
+}
+#nav ul li ul li:hover{
+	background: orange;
+	color: black;
+}
+#nav ul li ul li ul li:hover{
+	background: yellow;
+	color: black;
+}
+
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<ul>
+			<li>Sony
+				<ul>
+					<li>so 1</li>
+					<li>so 2</li>
+					<li>so 3</li>
+				</ul>
+			</li>
+			<li>Apple
+				<ul>
+					<li>app 1</li>
+					<li>app 2</li>
+					<li>app 3</li>
+				</ul>
+			</li>
+			<li>Nokia
+				<ul>
+					<li>no 1</li>
+					<li>no 2</li>
+					<li>no 3</li>
+				</ul>
+			</li>
+			<li>Samsung
+				<ul>
+					<li>sam 1</li>
+					<li>sam 2</li>
+					<li>sam 3
+						<ul>
+							<li>sam 1.1</li>
+							<li>sam 1.2</li>
+							<li>sam 1.3</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

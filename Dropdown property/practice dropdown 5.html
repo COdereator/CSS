@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DropDown</title>
+	<style>
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url("img1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+#nav{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255, 0, 0, 0.6);
+	color: white;
+}
+#nav ul{
+	padding: 0px;
+}
+#nav ul li{
+	float: left;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	list-style: none;
+	font-size: 25px;
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.4);
+}
+#nav ul li:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 1s all;
+	border-left: 1px solid;
+}
+#nav ul li ul{
+	display: none;
+}
+#nav ul li:hover > ul{
+	display: block;
+}
+#nav ul li ul li{
+	position: relative;
+}
+#nav ul li ul li ul{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<ul>
+			<li>Home</li>
+			<li>Service
+				<ul>
+					<li>Animation</li>
+					<li>Interior</li>
+					<li>Hardware</li>
+					<li>Software
+						<ul>
+							<li>App Dev
+								<ul>	
+									<li>Flutor</li>
+									<li>IOS Android</li>
+								</ul>	
+							</li>
+							<li>Web Design
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JS</li>
+								</ul>
+							</li>
+							<li>Language
+								<ul>
+									<li>C</li>
+									<li>C++</li>
+									<li>Python</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Career</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+
+</body>
+</html>

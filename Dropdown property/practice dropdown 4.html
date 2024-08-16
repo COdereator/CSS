@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice2 Dropdown</title>
+	<style>
+
+body{
+	background: url("img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+#nav{
+	width: 80%;
+	margin: auto;
+	height: 100px;
+
+}
+
+#nav ul{
+	padding: 0px;
+}
+#nav ul li{
+	float: left;
+	background-color: black;
+	color: white;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	list-style: none;
+	font-size: 25px;
+	opacity: 0.6;
+}
+#nav ul li ul{
+	display: none;
+}
+#nav ul li:hover > ul{
+	display: block;
+}
+#nav ul li:hover{
+	background-color: orange;
+	opacity: 0.9;
+}
+#nav ul li ul li{
+	position: relative;
+}
+#nav ul li ul li ul{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+}
+
+	</style>
+</head>
+<body>
+
+	<div id="nav">
+		<ul>
+			<li>USA
+				<ul>
+					<li>New York</li>
+					<li>California</li>
+					<li>New Maxico</li>
+					<li>Alaska</li>
+					<li>Florida</li>
+				</ul>
+			</li>
+			<li>India
+				<ul>
+					<li>Mumbai
+						<ul>
+							<li>Gateway Of India</li>
+							<li>Hotel Taj</li>
+							<li>Vankhade Stadium</li>
+						</ul>
+					</li>
+					<li>Gujarat</li>
+					<li>Delhi
+						<ul>
+							<li>Red Fort</li>
+							<li>Kutub Minar</li>
+						</ul>
+					</li>
+					<li>Goa</li>
+					<li>Jammu-Kashmir</li>
+				</ul>
+			</li>
+			<li>Australia
+				<ul>
+					<li>Victoria</li>
+					<li>Queensland</li>
+					<li>Tasmania</li>
+				</ul>
+			</li>
+			<li>Paris
+				<ul>
+					<li>Eiffel Tower</li>
+					<li>The Louvne</li>
+					<li>Disney Land</li>
+					</ul>
+			</li>
+			<li>Canada
+				<ul>
+					<li>Niagara Falls</li>
+					<li>Quebec City</li>
+					<li>St. John's</li>
+					</ul>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
